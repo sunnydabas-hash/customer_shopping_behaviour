@@ -51,5 +51,25 @@ FROM CUSTOMER_SHOPPING
 WHERE RETURN_STATUS = 'Not Returned' 
 GROUP BY category,ONLINE_STORE
 order by CATEGORY;
+
+
+
+SELECT RETURN_STATUS, COUNT(*) as Total_Orders, ROUND(COUNT(*)*100.0 / SUM(COUNT(*)) OVER(),2) AS percentage
+FROM CUSTOMER_SHOPPING
+GROUP BY RETURN_STATUS ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ```
 
