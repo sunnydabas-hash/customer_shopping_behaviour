@@ -1,5 +1,6 @@
 # customer_shopping_behaviour
 
+```
 SELECT *
 FROM customer_shopping;
 
@@ -50,4 +51,5 @@ FROM CUSTOMER_SHOPPING
 WHERE RETURN_STATUS = 'Not Returned' 
 GROUP BY category,ONLINE_STORE
 order by CATEGORY;
+```
 
